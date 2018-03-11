@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tossLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall">
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-9134419366970461/4478437690" />
+
+    <TextView
+        android:id="@+id/tossHead"
+        style="@style/headings"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/adView1"
+        android:layout_marginTop="101dp"
+        android:text="@string/toss_screen" />
+
+    <TextView
+        android:id="@+id/tossHint"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="cursive"
+        android:text="@string/tossDesc"
+        android:textColor="#FFF"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/toss1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tossHint"
+        android:layout_below="@+id/tossHint"
+        android:layout_marginTop="41dp"
+        android:onClick="toss1"
+        android:text="@string/toss1" />
+
+    <Button
+        android:id="@+id/toss2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toss1"
+        android:layout_alignBottom="@+id/toss1"
+        android:layout_alignEnd="@+id/tossHint"
+        android:onClick="toss2"
+        android:text="@string/toss2" />
+
+    <Button
+
+        android:id="@+id/play"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:onClick="play"
+        android:padding="6dp"
+        android:text="@string/play"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tossResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/play"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:fontFamily="casual"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/play"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:onClick="backToMainScreen"
+        android:padding="6dp"
+        android:text="@string/back"
+        android:textSize="20sp" />
+
+</RelativeLayout>

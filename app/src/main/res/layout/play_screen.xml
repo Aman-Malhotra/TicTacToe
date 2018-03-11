@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/playLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/wall">
+
+
+
+    <Button
+        android:id="@+id/a1"
+        style="@style/playButtons"
+        android:layout_above="@+id/a5"
+        android:layout_toStartOf="@+id/a2"
+        android:onClick="a1" />
+
+    <Button
+        android:id="@+id/a2"
+        style="@style/playButtons"
+        android:layout_above="@+id/a5"
+        android:layout_alignStart="@+id/a5"
+        android:onClick="a2" />
+
+    <Button
+        android:id="@+id/a3"
+        style="@style/playButtons"
+        android:layout_above="@+id/a5"
+        android:layout_toEndOf="@+id/a2"
+        android:onClick="a3" />
+
+    <Button
+        android:id="@+id/a4"
+        style="@style/playButtons"
+        android:layout_below="@+id/a1"
+        android:layout_toStartOf="@+id/a5"
+        android:onClick="a4" />
+
+    <Button
+        android:id="@+id/a5"
+        style="@style/playButtons"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="a5" />
+
+    <Button
+        android:id="@+id/a6"
+        style="@style/playButtons"
+        android:layout_alignBottom="@+id/a5"
+        android:layout_alignEnd="@+id/a3"
+        android:onClick="a6" />
+
+    <Button
+        android:id="@+id/a7"
+        style="@style/playButtons"
+        android:layout_below="@+id/a4"
+        android:layout_toStartOf="@+id/a5"
+        android:onClick="a7" />
+
+    <Button
+        android:id="@+id/a8"
+        style="@style/playButtons"
+        android:layout_alignBottom="@+id/a7"
+        android:layout_toStartOf="@+id/a6"
+        android:onClick="a8" />
+
+    <Button
+        android:id="@+id/a9"
+        style="@style/playButtons"
+        android:layout_below="@+id/a6"
+        android:layout_toEndOf="@+id/a8"
+        android:onClick="a9" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-9134419366970461/3531229671" />
+
+    <TextView
+        android:id="@+id/playResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textColor="#FFF"
+        android:textSize="35sp"
+        android:layout_above="@+id/a2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/goToMain"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/refreshPage"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:onClick="mainScreen"
+        android:text="@string/mainScreen"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/tossAgain"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:onClick="tossScreen"
+        android:text="@string/toss_again"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/refreshPage"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tossAgain"
+        android:layout_alignStart="@+id/tossAgain"
+        android:background="@drawable/my_button_bg"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:onClick="refreshPage"
+        android:text="Play Again"
+        android:textSize="19sp"/>
+
+</RelativeLayout>

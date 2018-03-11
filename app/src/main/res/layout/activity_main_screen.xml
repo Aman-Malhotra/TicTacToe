@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.microsoft.tictactoe.mainScreen"
+    android:background="@drawable/wall"
+    >
+
+    <TextView
+        android:id="@+id/gameTitle"
+        style="@style/headings"
+        android:layout_marginTop="30dp"
+        android:text="@string/title"
+        />
+
+    <Button
+        android:id="@+id/playWithPc"
+        style="@style/buttonStyles"
+        android:layout_alignStart="@+id/playFriend"
+        android:layout_below="@+id/gameTitle"
+        android:layout_marginTop="104dp"
+        android:onClick="playWithPc"
+        android:text="@string/playWithComputer" />
+
+    <Button
+        android:id="@+id/playFriend"
+        style="@style/buttonStyles"
+        android:layout_below="@+id/playWithPc"
+        android:onClick="playWithFriend"
+        android:text="@string/playWithFriend" />
+
+    <TextView
+        android:id="@+id/o"
+        style="@style/iconMainScreen"
+        android:layout_alignEnd="@+id/playFriend"
+        android:layout_below="@+id/playFriend"
+        android:layout_marginTop="11dp"
+        android:text="@string/o" />
+
+    <TextView
+        android:id="@+id/x"
+        style="@style/iconMainScreen"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/playFriend"
+        android:layout_alignTop="@+id/o"
+        android:text="@string/x" />
+
+    <Button
+        android:id="@+id/mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/x"
+        android:layout_alignBottom="@+id/x"
+        android:layout_centerHorizontal="true"
+        android:onClick="muteEvent"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="#fff"
+        android:textColor="#000"
+        android:text="@string/mute" />
+
+</RelativeLayout>
+    <!--@drawable/my_button_bg-->

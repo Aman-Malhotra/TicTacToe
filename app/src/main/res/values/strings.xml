@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title">Tic Tac Toe</string>
+    <string name="playWithComputer">Single Player</string>
+    <string name="playWithFriend">Two Player\'s</string>
+    <string name="settings">Settings</string>
+    <string name="mute">Mute</string>
+    <string name="x">X</string>
+    <string name="o">O</string>
+    <string name="back">Back</string>
+    <string name="toss_screen">Toss Screen</string>
+    <string name="tossDesc">Choose one of two buttons</string>
+    <string name="toss1" />
+    <string name="toss2" />
+    <string name="play">Let\'s Play</string>
+    <string name="mainScreen">Main Screen</string>
+    <string name="toss_again">Toss Again</string>
+
+</resources>
